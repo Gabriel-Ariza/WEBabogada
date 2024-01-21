@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inclusive Sans", sans-serif;
+}
+
+
+/* =========================  ESTILOS NAVBAR ========================= */
+.navbar {
+    position: fixed;
+    /* border: #2c1dff solid 4px; */
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.parte_derecha {
+    transition: width 0.5s ease;
+    width: 20%;
+    height: 11vh;
+    border: #1dff4a solid 3px;
+}
+.content_logo {
+    height: 100px;
+    width: 100px;
+
+}
+.logo {
+    height: 100%;
+    width: 100%;
+    background: url(../sources/dyno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parte_izquierda {
+    transition: width 0.6s ease;
+    width: 50%;
+    height: 11vh;
+    border: #fffb1d solid 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+.parte_izquierda > div {
+    transition: width 0.4s ease;
+    width: 195px;
+    height: 45px;
+    border: #000000 solid 3px;
+    border-radius: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.caja_servicios {
+    background-color: #5C8AFF;
+}
+.caja_quienes {
+    background-color: #5C8AFF;
+}
+.caja_contacto {
+    background-color: #7D5CFF;
+}
+.parte_izquierda > div > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+/* =========================  ESTILOS NAVBAR RESPONSIVE ========================= */
+@media (max-width: 1300px) {
+    .parte_izquierda > div {width: 180px;}
+}
+@media (max-width: 1200px) {
+    .parte_derecha {width: 25%;}
+    .parte_izquierda {width: 55%;}
+}
+@media (max-width: 1060px) {
+    .parte_derecha {width: 30%;}
+    .parte_izquierda > div {width: 170px;}
+    .parte_izquierda {width: 60%;}
+}
+@media (max-width: 900px) {
+    .parte_derecha {width: 35%;}
+    .parte_izquierda {width: 65%;}
+}
+@media (max-width: 880px) {
+    .parte_izquierda > div {width: 160px;}
+}
+@media (max-width: 800px) {
+    .parte_derecha {width: 30%;}
+    .parte_izquierda > div {width: 150px;}
+    .parte_izquierda {width: 70%;}
+}
+@media (max-width: 680px) {
+    .parte_derecha {width: 28%;}
+    .parte_izquierda > div {width: 140px;}
+    .parte_izquierda {width: 72%;}
+}
+@media (max-width: 620px) {
+    .parte_derecha {width: 28%;}
+    .parte_izquierda > div {width: 135px;}
+    .parte_izquierda {width: 72%;}
+}
+
+
+/* =========================  ESTILOS PANTALLAS ========================= */
+.pantalla1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #756bff;
+    background-color: #7dc2c2;
+    text-align: center;
+}
+.pantalla2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #756bff;
+    background-color: #77a6e7;
+    text-align: center;
+}
+.pantalla3 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #756bff;
+    background-color: #67deb0;
+    text-align: center;
+}
+.pantalla4 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #756bff;
+    background-color: #aeda79;
+    text-align: center;
+}
+
+
+/* =========================  ESTILOS BARRA DE SCROLL ========================= */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+background: #fff;
+border-radius: 10px;
+transition: background 0.3s ease-in-out;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #888;
+}
